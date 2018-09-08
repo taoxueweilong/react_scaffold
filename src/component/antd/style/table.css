@@ -1,0 +1,78 @@
+.ant-table-body {
+    font-size: 12px;
+    color: #666666;
+}
+.ant-checkbox-inner {
+    background-color: #dedede;
+    opacity: 1;
+    border: 1px solid #b6b6b6;
+}
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+    padding: 3px !important;
+}
+.ant-table-thead > tr > .custom {
+  background-color: transparent !important;
+}
+.ant-table-tbody > tr > .custom {
+  background-color: white !important;
+  height: 20px;
+}
+.ant-table-row.row-height-24 {
+  height: 24px;
+  background-color: white;
+}
+th.height-24 {
+  padding-left: 5px !important;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  height: 24px;
+  background-color: rgba(242,242,242,1) !important;
+}
+
+/** 可选的表格，选中后对Selected类添加背景色 */
+.Selected.ant-table-row {
+  background-color: #eac7d8 !important;
+}
+.ant-table-tbody > .Selected:hover > td{
+  background-color: #eac7d8 !important;
+}
+.checked.ant-table-row {
+  background-color: #308CFD;
+}
+.ant-table-tbody > .checked:hover > td{
+  background-color: #308CFD !important;
+}
+/* .ant-table-tbody > .checked:hover > td{
+  background-color: red !important;
+} */
+/** 可选的表格，行缩进5px */
+.Selected > td, .unSelected > td, .checked > td{
+  padding-left: 5px !important;
+}
+/** 患者列表表格样式 */
+.patienList .patienListTableCol{
+  padding: 7px;
+}
+.ant-table-thead > tr > .patienListTableCol {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: none;
+}
+.ant-table-tbody > .patienListTableRow > td{
+  border-bottom: none;
+  color: #333333;
+}
+
+/* 表格复选框 */
+.ant-table-selection-column > span > .ant-checkbox-wrapper > span  , .ant-table-selection > .ant-checkbox-wrapper > span {
+  font-size: 12px !important;
+}
+.ant-table-selection-column > span > .ant-checkbox-wrapper > .ant-checkbox , .ant-table-selection > .ant-checkbox-wrapper > .ant-checkbox {
+  margin-right: 5px;
+}
+.ant-table-selection-column > span > .ant-checkbox-wrapper > .ant-checkbox > .ant-checkbox-inner:after , .ant-table-selection > .ant-checkbox-wrapper > .ant-checkbox > .ant-checkbox-inner:after {
+  left: 3px !important;
+}
+.ant-table-selection-column > span > .ant-checkbox-wrapper > .ant-checkbox > .ant-checkbox-inner , .ant-table-selection > .ant-checkbox-wrapper > .ant-checkbox > .ant-checkbox-inner {
+  width: 14px !important;
+  height: 14px !important;
+}

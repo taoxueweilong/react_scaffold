@@ -1,0 +1,105 @@
+/*自定义图标的下下拉框*/
+.custom .ant-select-selection, .thin_arrow .ant-select-selection{
+  width: 100% !important;
+  border-radius: 19px !important;
+  height: 34px !important;
+}
+.custom > .ant-select-selection> .ant-select-selection__rendered , .thin_arrow > .ant-select-selection> .ant-select-selection__rendered {
+  line-height: 34px !important;
+}
+.custom > .ant-select-selection> .ant-select-arrow , .thin_arrow > .ant-select-selection> .ant-select-arrow {
+  color: rgba(0,0,0,1) !important;
+  font-size: 16px !important;
+}
+.custom_arrow > .ant-select-selection, .thin_arrow > .ant-select-selection {
+  border-radius: 0px !important;
+  width: 100% !important;
+  border: none;
+  border-bottom: 1px solid rgba(215, 215, 215, 1);
+  height: 36px !important;
+  padding-top: 7px !important;
+}
+.custom_arrow > .ant-select-selection:focus, .thin_arrow > .ant-select-selection:focus {
+  border: none;
+  border-bottom: 1px solid rgba(215, 215, 215, 1);
+  box-shadow: none !important;
+}
+.custom_arrow > .ant-select-selection > .ant-select-arrow {
+  background: url(../img/down.png) no-repeat top right;
+  width: 25px;
+  line-height: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,0);
+}
+.custom_arrow .ant-select-selection__placeholder{
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}
+.custom_arrow.ant-select.ant-select-open > .ant-select-selection > .ant-select-arrow {
+  background: url(../img/up.png) no-repeat top right;
+  width: 25px;
+  line-height: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,0);
+}
+/*宽度自适应,高25px的下拉框的下拉框*/
+.table_selector > .ant-select-selection {
+  width: auto ;
+  height: 25px !important;
+}
+.table_selector.ant-select {
+  height: 25px !important;
+}
+.table_selector > .ant-select-selection > .ant-select-selection__rendered {
+  line-height: 25px;
+}
+/* 保留底边框，换箭头边框的下拉框*/
+.thin_arrow > .ant-select-selection > .ant-select-arrow {
+  background: url(../img/thinDown.png) no-repeat bottom right;
+  width: 25px;
+  line-height: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,0);
+}
+.thin_arrow > .ant-select-selection > .ant-select-arrow::before {
+  color: rgba(0,0,0,0)
+}
+.thin_arrow.ant-select.ant-select-open > .ant-select-selection > .ant-select-arrow {
+  background: url(../img/thinUp.png) no-repeat bottom right;
+  width: 25px;
+  line-height: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,0);
+}
+.add-herbal-pop .ant-select-selection .ant-select-arrow {
+  background: url(../img/down.png) no-repeat top right;
+  width: 25px;
+  line-height: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,0);
+}
+.add-herbal-pop .ant-select.ant-select-open .ant-select-selection  .ant-select-arrow {
+  background: url(../img/up.png) no-repeat top right;
+  width: 25px;
+  line-height: normal;
+  font-size: 16px;
+  color: rgba(0,0,0,0);
+}
+/** 表格中的下拉选择框 */
+.select-table > .ant-select-selection{
+  border-radius: 0px;
+}
+.select-table > .ant-select-selection--single{
+  height: 25px;
+}
+.select-table > .ant-select-selection > .ant-select-selection__rendered{
+  line-height: 25px;
+}
+.select-table > .ant-select-selection > .ant-select-selection__rendered > .ant-select-selection-selected-value{
+  text-decoration: underline;
+  padding-right: 0px;
+}
+.select-table > .ant-select-selection > .ant-select-arrow::before{
+  content: '▼';
+  color: #8B8B8B;
+}

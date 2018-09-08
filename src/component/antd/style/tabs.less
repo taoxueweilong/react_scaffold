@@ -1,0 +1,68 @@
+/*左侧tabs切换, tabs类作为唯一标识*/
+.tabs > .ant-tabs-bar > .ant-tabs-nav-container{
+  font-weight: 400;
+  width: 31px;
+}
+.tabs > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll{
+  overflow: visible !important;
+  word-wrap: break-word !important;
+  white-space: normal;
+}
+.tabs > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll > .ant-tabs-nav > .ant-tabs-ink-bar{
+  display: none !important;
+}
+.tabs > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll > .ant-tabs-nav > .ant-tabs-tab {
+  text-align: center !important;
+  padding: 8px 5px !important;
+  background-color: rgba(242, 242, 242, 1);
+  color: #33CC00;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.tabs > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll > .ant-tabs-nav > .ant-tabs-tab:hover {
+  background-color: rgba(242, 242, 242, 1);
+  color: #33CC00;
+}
+.tabs > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll > .ant-tabs-nav > .ant-tabs-tab-active {
+  background-color: rgba(51, 204, 0, 1);
+  color: #FFFFFF;
+}
+.tabs > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll > .ant-tabs-nav > .ant-tabs-tab-active:hover {
+  background-color: rgba(51, 204, 0, 1);
+  color: #FFFFFF;
+}
+/*右侧内容*/
+.tabs > .ant-tabs-content {
+  border-left: 2px solid  #FFFFFF !important;
+  border-image: linear-gradient(rgba(51, 204, 0, 1),#FFFFFF) 2;
+  border-top: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  padding: 0px !important;
+}
+/*
+@作者：姜中希
+@日期：2018-06-25
+@描述：对antd tab页的重新设计样式，使用方法是在tab上添加tabs这个class然后引用即可,
+可参考src\container\layout\content\treatManage\treatment\index.js
+*/
+.scrollTextarea > .ant-tabs-content {
+  padding: 0px !important;
+}
+.scrollTextarea > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll > .ant-tabs-nav > .ant-tabs-tab > span {
+  display: flex;
+  align-items: center;
+}
+.scrollTextarea > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll > .ant-tabs-nav > .ant-tabs-tab {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.scrollTextarea > .ant-tabs-bar > .ant-tabs-nav-container > .ant-tabs-nav-wrap > .ant-tabs-nav-scroll > .ant-tabs-nav > .ant-tabs-tab-active {
+  margin: 0 32px 0 0 !important;
+}
+/*
+@作者：姜中希
+@日期：2018-06-27
+@描述：对antd tab页的重新设计样式，使用方法是在tab上添加scrollArea这个class然后引用即可,
+可参考src\container\layout\content\treatManage\treatment\treatmentList.js
+*/

@@ -1,0 +1,114 @@
+/* 确定按钮样式 */
+.semicircle.ant-btn-primary {
+  border-radius: 9999px !important; /*无穷大时取高度一半*/
+  padding: 2px 35px !important;
+  background-color: rgba(10, 110, 203, 1) !important;
+  margin: 10px;
+}
+.semicircle.ant-btn-primary:hover {
+  background-color: #0085f2 !important;
+  border: none;
+  outline: none;
+}
+.semicircle.ant-btn-primary:focus {
+  background-color: #005daa !important;
+  border: none;
+  outline: none;
+}
+.semicircle.ant-btn-primary:visited {
+  border: none;
+  outline: none;
+}
+/** 取消按钮的样式 */
+.cancel.ant-btn-primary {
+  border-radius: 9999px !important;
+  padding: 2px 35px !important;
+  background-color: white !important;
+  border: none;
+  color: #0A6ECB !important;
+  margin: 10px !important;
+}
+/** 取消按钮的样式 */
+.cancel.gray.ant-btn-primary {
+  border-radius: 9999px !important;
+  padding: 2px 35px !important;
+  background-color: rgba(242, 242, 242, 1) !important;
+  border: none;
+  color: #0A6ECB !important;
+  margin: 0px 10px !important;
+}
+
+/* 医嘱管理自定义取消按钮样式  */
+.cancelBtn.ant-btn-primary {
+  border-radius: 9999px !important;
+  padding: 2px 35px !important;
+  background-color: white !important;
+  color: #0A6ECB !important;
+  margin: 0px 10px;
+}
+.cancelBtn.ant-btn-primary:hover {
+  background-color: #fbf7fa !important;
+  border-color: #1890ff;
+  outline: none;
+}
+.cancelBtn.ant-btn-primary:visited {
+  border: none;
+  outline: none;
+}
+/*小按钮高24px宽59.84， 取消按钮纯白色, 使用时在按钮上加small类然后引用该文件即可*/
+.semicircle.small {
+  padding: 0px 13px !important;
+  height: 24px;
+}
+.cancel.small {
+  padding: 0px 13px !important;
+  height: 24px;
+  border: none !important;
+  background-color: #FFFFFF !important;
+}
+.cancel.small:hover {
+  border: none !important;
+}
+.smaller.ant-btn-primary {
+  border-radius: 17px !important;
+  padding: 2px 15px !important;
+  background-color: white !important;
+  border: none !important;
+  font-size: 12px;
+  outline: none;
+  height: 25px;
+  color: #0A6ECB !important;
+}
+/* 中等宽度按钮 */
+.middle.ant-btn-primary {
+  border-radius: 9999px !important; /*无穷大时取高度一半*/
+  width: 120px;
+  background-color: rgba(10, 110, 203, 1) !important;
+  margin: 10px;
+}
+.middle.ant-btn-primary:hover {
+  background-color: #0085f2 !important;
+  border: none;
+  outline: none;
+}
+.middle.ant-btn-primary:focus {
+  background-color: #005daa !important;
+  border: none;
+  outline: none;
+}
+.middle.ant-btn-primary:visited {
+  border: none;
+  outline: none;
+}
+/** 取消按钮中等大小的样式 */
+.cancel.middle.ant-btn-primary {
+  border-radius: 9999px !important;
+  padding: 2px 35px !important;
+  background-color: white !important;
+  border: 1px solid #FFFFFF;
+  color: #0A6ECB !important;
+  margin: 10px !important;
+}
+.cancel.middle.ant-btn-primary:hover {
+  border: 1px solid #ababc5;
+}
