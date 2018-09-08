@@ -1,4 +1,4 @@
-import { Modal } from 'antd';
+import {Modal} from 'antd';
 import jQuery from 'jquery';
 
 function getResource(params , success, error ){
@@ -26,6 +26,12 @@ function error(res){
     });
   }
 };
+Modal.error({
+  title: '网络异常，请您检查网络连接情况！',
+  onOk: ()=>{
+    window.modal = null
+  }
+});
 export default getResource;
 /*
 @作者：姜中希

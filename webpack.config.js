@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: ['./src/index.js'],
@@ -40,7 +41,10 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           presets: ['react', 'es2015'],
-          plugins: ['transform-class-properties']
+          plugins: [
+            'transform-class-properties',
+            ["import", { "libraryName": "antd", "style": "css" }], // antd按需加载
+          ]
         }
       },
       {
@@ -160,6 +164,7 @@ module.exports = {
         to: './LodopFuncs.js'
       }],{copyUnmodified: true}
     ),
+    new BundleAnalyzerPlugin(),
     new webpack.NamedModulesPlugin(), //显示模块的相对路径
     new ProgressBarPlugin(), // 显示打包进度
     new webpack.HotModuleReplacementPlugin() // 热更新

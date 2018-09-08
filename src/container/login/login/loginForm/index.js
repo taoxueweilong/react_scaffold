@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link, withRouter } from 'react-router-dom';
-import Form from 'antd/lib/form';
-import Input from 'antd/lib/input';
-import Button from 'antd/lib/button';
-import Checkbox from 'antd/lib/checkbox';
-import 'antd/lib/form/style';
-import 'antd/lib/input/style';
-import 'antd/lib/button/style';
-import 'antd/lib/checkbox/style';
+import {Form, Input} from 'antd';
 import getResource from 'commonFunc/ajaxGetResource';
 import User from 'components/dr/icon/user';
 import Lock from 'components/dr/icon/lock';
@@ -165,25 +158,9 @@ class Index extends Component {
             </IconReload>
           </FormItem>
           <FormItem>
-            <Checkbox
-              className='small'
-              checked={rememberPass == 'true'}
-              onChange={(e)=>{this.rememberPass(e.target.checked)}}>
-              <CheckboxText>记住密码</CheckboxText>
-            </Checkbox>
-            <Checkbox
-              className='small'
-              checked={autoLogin == 'true'}
-              onChange={(e)=>{this.autoLogin(e.target.checked)}}>
-              <CheckboxText>下次自动登录</CheckboxText>
-            </Checkbox>
+
             <RetakeLink to="/login/getPassword">🔑找回密码</RetakeLink>
-            <LoginButton type="primary" htmlType="submit" className="semicircle">
-              立即登录
-            </LoginButton>
-            <LoginButton type="primary" className="cancelBtn">
-              忽略，稍后登录
-            </LoginButton>
+
           </FormItem>
         </FormLogin>
         <TipModal ref={ref=>{this.tipModal=ref}}>
@@ -243,14 +220,7 @@ const IconReload = styled.i`
   right: 3px;
   cursor: pointer;
 `;
-const LoginButton = styled(Button)`
-  &&& {
-    height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  width: 300px;
-`;
+
 const CheckboxText = styled.span`
   color: #999999;
 `;

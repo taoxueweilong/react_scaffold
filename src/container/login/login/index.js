@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
-import Icon from 'antd/lib/icon';
+import { Icon } from 'antd';
 import LoginForm from './loginForm';
 import logo from './img/logo.png';
 import 'components/antd/style/icon.less';
