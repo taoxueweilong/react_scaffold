@@ -25,39 +25,19 @@ injectGlobal`
   	font-style: normal;
   }
 `;
-// import Mobile from './container/layout/body/center/content/treatManage/tabButton/mobile/index';
-import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.less'
-// import Layout from './container/layout';
+
 const loadingComponent = () => (<div>Loading...</div>);
-const Layout = Loadable({
-  loader: () => import('./container/layout'),
-  loading: loadingComponent,
-});
+
 const Login = Loadable({
   loader: () => import('./container/login'),
   loading: loadingComponent,
 });
-const SystemOption = Loadable({
-  loader: () => import('./container/systemOption'),
-  loading: loadingComponent,
-});
-const SyndromeDifferentiation = Loadable({
-  loader: () => import('./container/syndromeDifferentiation'),
-  loading: loadingComponent,
-});
-const Mobile = Loadable({
-  loader: () => import('./container/layout/body/center/content/treatManage/tabButton/mobile/index'),
-  loading: loadingComponent,
-});
+
 const App = () => (
   	<BrowserRouter>
 	    <Switch>
         <Route path='/' render={()=><Redirect to="/login"/>} exact></Route>
 	    	<Route path='/login' component={Login}></Route>
-        <Route path='/layout' component={Layout} ></Route>
-        <Route path='/systemOption' component={SystemOption} exact></Route>
-	      <Route path='/Mobile' component={Mobile} exact></Route>
-        <Route path='/syndromeDifferentiation' component={SyndromeDifferentiation} ></Route>
 	    </Switch>
   	</BrowserRouter>
 );

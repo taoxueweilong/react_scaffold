@@ -7,27 +7,12 @@ const Login = Loadable({
   loader: () => import('./login'),
   loading: loadingComponent,
 });
-const BindingHis = Loadable({
-  loader: () => import('./bindingHis'),
-  loading: loadingComponent,
-});
-const RetakePassword = Loadable({
-  loader: () => import('./retakePassword'),
-  loading: loadingComponent,
-});
-const InitialSetting = Loadable({
-  loader: () => import('./initialSetting'),
-  loading: loadingComponent,
-});
 export default class Index extends Component {
   render() {
     return (
       <Window>
         <Switch>
           <Route path='/login' component={Login} exact></Route>
-          <Route path='/login/initialSetting' component={InitialSetting} exact></Route>
-          <Route path='/login/getPassword' component={RetakePassword} exact></Route>
-          <Route path='/login/bindingHis' component={BindingHis} exact></Route>
         </Switch>
       </Window>
 

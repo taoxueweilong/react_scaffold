@@ -3,10 +3,7 @@ import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import Icon from 'antd/lib/icon';
 import LoginForm from './loginForm';
-import heart from './img/heart.png';
-import tip from './img/tip.png';
-import curePic from './img/curePic.png';
-import logo from './img/logo.jpg';
+import logo from './img/logo.png';
 import 'components/antd/style/icon.less';
 
 export default class Login extends Component {
@@ -25,20 +22,11 @@ export default class Login extends Component {
           <span>{systemName} |
             <Stress>登录</Stress>
           </span>
-          <BigPic src={curePic} />
           <div>
             <LoginLogoPic src={logo} />
-            <LoginLogoTxt>
-              <TxtChinese>中科软科技</TxtChinese>
-              <TxtEnglish>Sinosoft Co,.Ltd.</TxtEnglish>
-            </LoginLogoTxt>
           </div>
         </Left>
         <Right>
-          <LoginTitlePic>
-            <BreakHeart src={heart} />
-            <PicWrite src={tip} />
-          </LoginTitlePic>
           <LoginForm/>
         </Right>
         <Close type='close' className='login-close' onClick={this.onClose.bind(this)} />
@@ -60,6 +48,7 @@ const Left = styled.div`
   color: #333333;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 `;
 const Stress = styled.span`
   color: #999999;
@@ -83,18 +72,10 @@ const LoginTitlePic = styled.p`
   display: flex;
   align-items: center;
 `;
-const BreakHeart = styled.img`
-  width: 24px;
-  height: 22px;
-`;
-const PicWrite = styled.img`
-  width: 244px;
-  height: 32px;
-`;
 const LoginLogoPic = styled.img`
   float: left;
-  width: 60px;
-  height: 52px;
+  width: 260px;
+  height: 252px;
 `;
 const LoginLogoTxt = styled.div`
   float: left;
